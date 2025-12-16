@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="../jssip-3.9.4.js"></script>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<style>
+#callBtn {
+            background-color: #28a745;
+            color: white;
+            padding: 14px 80px;
+            font-size: 25px;
+            border-radius: 8px;
+            border: none;
+            cursor: pointer;
+            margin-top: 30px;
+        }
+
+#hangupBtn {
+            background-color: #FF0000;
+            color: white;
+            padding: 14px 80px;
+            font-size: 25px;
+            border-radius: 8px;
+            border: none;
+            cursor: pointer;
+            margin-top: 30px;
+        }
+
+.center-container {
+    text-align: center; /* Centers all inline/inline-block children */
+}
+
+.center-container img {
+    /* Optional: align vertically if they have different heights */
+    vertical-align: middle;
+}
+
+.center-container span {
+     /* Optional: align vertically */
+    vertical-align: middle;
+}
+
+</style>
+
+<body>
+    <div class="center-container">
+        <img src="../edialogue.jpeg" class="logo">
+<h2>
+        <p class="subtitle">Welcome to eDialogue Call Center</p>
+        <p class="subtitle">Press Call to Speak with <span style="color: green;">Callme01</span></p>
+</h2>
+        <button id="callBtn" class="button">Call</button>
+        <button id="hangupBtn" class="button hangup" style="display:none;">Hangup</button>
+
+<h2>
+        <p class="subtitle" id="status" class="status">Status: Idle</p>
+</h2>
+        <audio id="remoteAudio" autoplay></audio>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
+
